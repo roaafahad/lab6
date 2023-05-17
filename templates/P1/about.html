@@ -1,0 +1,98 @@
+    {% extends 'main.html' %}
+{% block content %}
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: "Sakkal Majalla";
+  margin: 0;
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+.column {
+  float: left;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(15, 1, 1, 0.781);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 20px;
+  text-align: center;
+  background: #95afb9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #136864, #3b3f3f);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #354546, #626666); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  color: #123030;
+      width: 50%;
+
+    font-size: x-large;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+    text-align: center;
+}
+
+.title {
+  color: rgb(53, 49, 49);
+}
+
+.button:hover {
+  background-color: #ebf3f3;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+</style>
+</head>
+<body>
+<center>
+<div class="about-section">
+<h2 style="color:#dfeff0;">About as</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <div class="container">
+          &nbsp
+        <h2>Atyaf Alhawiti</h2>
+ <img style="width: 5em;" class="logo" src="https://i.postimg.cc/1RGj232F/IMG-2653.jpg" />
+      <br><br>
+          <p class="title">Reader</p>
+        <p>My hobby is reading books since my childhood.</p>
+          <p>I started reading in 2014</p>
+        <p>Atyaf.Ah324@gmail.com</p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</center>
+</body>
+</html>
+
+
+
+{% endblock %}
